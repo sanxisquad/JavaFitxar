@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerTipusIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipus Incidència" />
+
+    <EditText
+        android:id="@+id/etDescripcio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripció" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data (YYYY-MM-DD)"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <Spinner
+        android:id="@+id/spinnerHores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hores" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+</LinearLayout>

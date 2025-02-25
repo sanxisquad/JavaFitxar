@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tiac_tac</string>
+    <string name="introdu_u_el_vostre_nom_i_rol">Introduïu el vostre nom i rol</string>
+    <string name="rol">Rol</string>
+    <string name="enviar">Enviar</string>
+    <string name="has_oblidat_la_contrasenya">Has oblidat la contrasenya?</string>
+    <string name="inicia_sessi">Inicia sessió</string>
+    <string name="contrasenya">Contrasenya</string>
+    <string name="nom_d_usuari">Nom d\'usuari</string>
+    <string name="benvingut">Benvingut!</string>
+    <string name="todo">TODO</string>
+    <string name="todo_2">TODO</string>
+    <string name="todo_3">TODO</string>
+</resources>

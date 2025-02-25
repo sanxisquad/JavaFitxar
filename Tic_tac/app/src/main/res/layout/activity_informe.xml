@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InformeActivity"
+    >
+
+    <EditText
+        android:id="@+id/etDiaInici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dia d'inici (yyyy-mm-dd)"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etDiaFi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dia de finalització (yyyy-mm-dd)"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@id/etDiaInici"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:layout_below="@id/etDiaFi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnMostrar"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/llInforme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Barra de navegació inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color" />
+</RelativeLayout>

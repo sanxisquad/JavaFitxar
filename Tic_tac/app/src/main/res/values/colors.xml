@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Primary colors -->
+        <color name="purple_500">#6200EE</color>
+        <color name="purple_700">#3700B3</color>
+        <color name="primary">@color/purple_500</color>
+
+        <!-- Text colors -->
+        <color name="text_primary">#DE000000</color>
+        <color name="text_secondary">#99000000</color>
+
+        <!-- Basic colors -->
+        <color name="white">#FFFFFF</color>
+        <color name="black">#000000</color>
+
+        <!-- Background colors -->
+        <color name="background">#142832</color>
+        <color name="surface">#FFFFFF</color>
+
+        <!-- Additional Material colors -->
+        <color name="error">#B00020</color>
+        <color name="success">#4CAF50</color>
+
+        <!-- Status bar and navigation colors -->
+        <color name="status_bar">@color/purple_700</color>
+        <color name="navigation_bar">@color/white</color>
+
+        <color name="btn_iniciar_color">#4CAF50</color> <!-- Verd -->
+        <color name="btn_parar_color">#F44336</color> <!-- Vermell -->
+        <color name="btn_informe_color">#00c2d1</color> <!-- Blau -->
+
+        <color name="background_light">#F5F5F5</color>
+        <color name="primaryDark">#6200EE</color>
+        <color name="secondaryColor">#03DAC5</color>
+
+</resources>

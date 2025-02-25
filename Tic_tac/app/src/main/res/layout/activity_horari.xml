@@ -1,0 +1,416 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".HorariActivity">
+
+    <!-- Menu de navegació a la part inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_above="@id/bottomNavigationView">
+
+        <!-- Títol -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Curs 2024 - 2025"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Contenidor de la taula -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="2dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp"
+            android:layout_marginTop="20dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/tlHorari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text=""
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text="DILLUNS"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text="DIMARTS"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text="DIMECRES"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text="DIJOUS"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/TableHeader"
+                                android:text="DIVENDRES"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <!-- Hores afegides -->
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="07:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="08:10"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="09:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="09:55"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="10:50"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/BreakCell"
+                                android:layout_span="5"
+                                android:text="PATI"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="11:15"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="12:10"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="13:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="13:55"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/BreakCell"
+                                android:layout_span="5"
+                                android:text="DINAR ESCOLAR"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="15:10"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="16:05"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="17:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="17:55"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                style="@style/BreakCell"
+                                android:layout_span="5"
+                                android:text="PATI"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="18:20"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="19:15"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="20:10"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="21:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                style="@style/TableCell"
+                                android:text="22:00"
+                                android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+
+                            <TextView style="@style/TableCell" android:textSize="10sp" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

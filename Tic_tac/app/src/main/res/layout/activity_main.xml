@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomCognoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom Cognoms"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/hores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hores d'avui:"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tvNomCognoms"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tvHores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hores del dia"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/hores"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Iniciar"
+        android:backgroundTint="@color/btn_iniciar_color"
+        android:background="@drawable/circle_button"
+        android:layout_below="@id/tvHores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnParar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Parar"
+        android:backgroundTint="@color/btn_parar_color"
+        android:background="@drawable/circle_button"
+        android:layout_below="@id/btnIniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvEsperantUbicacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperant a que es trobi la ubicació..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnIniciar"
+        android:layout_marginTop="16dp"
+        android:visibility="visible" />
+        
+    <TextView
+        android:id="@+id/tvHoraInici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora d'inici: "
+        android:textSize="16sp"
+        android:layout_below="@id/btnParar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvHoraSortida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora de sortida: "
+        android:textSize="16sp"
+        android:layout_below="@id/tvHoraInici"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"/>
+
+    <!-- Barra de navegació inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color" />
+</RelativeLayout>
